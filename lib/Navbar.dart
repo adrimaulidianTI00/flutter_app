@@ -5,6 +5,7 @@ import 'package:flutter_app/Hal2.dart';
 import 'package:flutter_app/Hal3.dart';
 import 'package:flutter_app/Hal4.dart';
 import 'package:flutter_app/Hal5.dart';
+import 'package:flutter_app/Hal6.dart';
 
 class Navbar extends StatefulWidget {
   @override
@@ -14,9 +15,9 @@ class Navbar extends StatefulWidget {
 class _NavbarState extends State<Navbar> {
   int selectedpage = 0;
 
-  final halaman =[Hal1(), Hal2(), Hal3(), Hal4(), Hal5(),];
+  final halaman =[Hal1(), Hal2(), Hal3(), Hal4(), Hal5(), Hal6(),];
 
-  final bgcolor = [Colors.white, Colors.white, Colors.white, Colors.lightBlue, Colors.orange];
+  final bgcolor = [Colors.white, Colors.white, Colors.white, Colors.white, Colors.orange, Colors.white,];
 
   @override
   Widget build(BuildContext context) {
@@ -35,10 +36,12 @@ class _NavbarState extends State<Navbar> {
             size: 30, color: Colors.black),
           Icon(Icons.qr_code_scanner,
             size: 30, color: Colors.black),
-          Icon(Icons.ac_unit,
+          Icon(Icons.color_lens,
             size: 30, color: Colors.black),
           Icon(Icons.accessibility,
             size: 30, color: Colors.black),
+          Icon(Icons.book,
+            size: 30, color: Colors.black,)
         ], onTap: (index) {
           setState(() {
             selectedpage = index;
